@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explore the Uganda Institute of Technical Excellence through our campus gallery showcasing facilities, student life, and events.">
+    <meta name="keywords" content="Uganda Institute of Technical Excellence, UITE, technical education, campus gallery, facilities, student life">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Campus Gallery | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Explore our campus, facilities, and student life through our gallery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.edu/gallery">
+    <meta property="og:image" content="https://www.uite.edu/images/social-share.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Gallery | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Explore our campus, facilities, and student life through our gallery.">
+    <meta name="twitter:image" content="https://www.uite.edu/images/social-share.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.uite.edu/gallery">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <title>Campus Gallery | Uganda Institute of Technical Excellence</title>
+    
+    <style>
+        :root {
+            --primary-color: #003366; /* Deep blue for trust and professionalism */
+            --secondary-color: #E31937; /* Crimson for highlights */
+            --accent-color: #FFD700; /* Gold for accents */
+            --text-color: #333333;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #495057;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            --border-radius: 4px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 8px;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Gallery Intro */
+        .gallery-intro {
+            text-align: center;
+            padding: 60px 0 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .gallery-intro h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .gallery-intro h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .gallery-intro p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            margin-top: 20px;
+        }
+        
+        /* Gallery Filter */
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        /* Gallery Grid */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            aspect-ratio: 4/3;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 51, 102, 0.9));
+            color: var(--white);
+            padding: 20px;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            bottom: 0;
+        }
+        
+        .gallery-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Accessibility Focus Styles */
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 40px 0 30px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery-intro {
+                padding: 40px 0 30px;
+            }
+            
+            .gallery-intro h2 {
+                font-size: 1.7rem;
+            }
+            
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-filter {
+                gap: 8px;
+            }
+            
+            .filter-btn {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+            
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .page-header {
+                background-color: var(--white) !important;
+                color: var(--text-color) !important;
+                padding: 20px 0 !important;
+            }
+            
+            .breadcrumb {
+                display: none;
+            }
+            
+            .gallery-filter {
+                display: none;
+            }
+            
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px !important;
+            }
+            
+            .gallery-overlay {
+                position: relative !important;
+                bottom: auto !important;
+                background: transparent !important;
+                color: var(--text-color) !important;
+                padding: 10px 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Campus Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery-page">
+        <div class="container">
+            <div class="gallery-intro">
+                <h2>Life at UITE</h2>
+                <p>Explore our campus, facilities, and student life through these images that capture the essence of technical education excellence at Uganda Institute of Technical Excellence.</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="students">Students</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item" data-category="campus">
+                    <img src="main-campus.jpg" alt="Main Campus building with modern architecture surrounded by green spaces">
+                    <div class="gallery-overlay">
+                        <h3>Main Campus</h3>
+                        <p>Our 50-acre campus in Kampala's industrial area features state-of-the-art facilities for technical education</p>
+                    </div>
+                </div>
+                
+                <!-- More gallery items would follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would be included here -->
+    
+    <!-- Load Font Awesome asynchronously -->
+    <script>
+        !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.relList&&n.relList.supports&&n.relList.supports("preload")&&"style"===n.getAttribute("as")&&(n.rel="stylesheet")}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}(this);
+    </script>
+</body>
+</html>

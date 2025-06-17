@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Research and innovation at Uganda Institute of Technical Excellence. Explore our focus areas, current projects, and partnerships in technical research.">
+    <meta name="keywords" content="Uganda technical research, renewable energy research, appropriate technology, research partnerships, technical innovation Uganda">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Research & Innovation | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Advancing technical knowledge through research initiatives focused on solving real-world problems in Uganda and beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ugandatech.ac.ug/research">
+    <meta property="og:image" content="https://www.ugandatech.ac.ug/images/research-og.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Research & Innovation | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Advancing technical knowledge through innovative research in Uganda.">
+    <meta name="twitter:image" content="https://www.ugandatech.ac.ug/images/research-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ugandatech.ac.ug/research">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Research & Innovation | Uganda Institute of Technical Excellence</title>
+    
+    <style>
+        :root {
+            --primary-color: #003366; /* Dark blue - professional/academic */
+            --secondary-color: #E57200; /* Orange - accent */
+            --accent-color: #008EAA; /* Teal */
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --gray-color: #6C757D;
+            --white-color: #FFFFFF;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-secondary: 'Roboto Slab', serif;
+            --transition: all 0.3s ease;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            --border-radius: 4px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white-color);
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.3;
+        }
+        
+        .page-header h1 {
+            font-family: var(--font-secondary);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .breadcrumb a {
+            color: var(--white-color);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 10px;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Research Section */
+        .research-page {
+            padding: 60px 0;
+        }
+        
+        .research-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .research-intro h2 {
+            font-family: var(--font-secondary);
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .research-intro p {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Research Areas */
+        .research-areas {
+            margin-bottom: 60px;
+        }
+        
+        .research-areas h3,
+        .research-projects h3,
+        .research-partnerships h3 {
+            font-family: var(--font-secondary);
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .research-areas h3::after,
+        .research-projects h3::after,
+        .research-partnerships h3::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 0;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .area {
+            background-color: var(--white-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--accent-color);
+            transition: var(--transition);
+        }
+        
+        .area:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .area h4 {
+            font-family: var(--font-secondary);
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .area h4 i {
+            margin-right: 15px;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+        
+        .area p {
+            color: var(--gray-color);
+        }
+        
+        /* Research Projects */
+        .research-projects {
+            margin-bottom: 60px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project {
+            background-color: var(--white-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .project h4 {
+            font-family: var(--font-secondary);
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .project p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        /* Research Partnerships */
+        .research-partnerships {
+            text-align: center;
+            padding: 50px 0;
+            background-color: rgba(0, 142, 170, 0.05);
+            border-radius: var(--border-radius);
+            margin-bottom: 40px;
+        }
+        
+        .research-partnerships p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            color: var(--gray-color);
+            font-size: 1.1rem;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        
+        .btn-secondary {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: transparent;
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 60px 0 30px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .research-intro h2 {
+                font-size: 1.7rem;
+            }
+            
+            .research-areas h3,
+            .research-projects h3,
+            .research-partnerships h3 {
+                font-size: 1.6rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .research-intro h2 {
+                font-size: 1.5rem;
+            }
+            
+            .areas-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Research & Innovation</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="research.html">Research</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="research-page">
+        <div class="container">
+            <div class="research-intro">
+                <h2>Advancing Technical Knowledge</h2>
+                <p>Our research initiatives focus on solving real-world problems through innovation and technology.</p>
+            </div>
+            
+            <div class="research-areas">
+                <h3>Research Focus Areas</h3>
+                <div class="areas-grid">
+                    <div class="area">
+                        <h4><i class="fas fa-solar-panel"></i> Renewable Energy</h4>
+                        <p>Developing sustainable energy solutions for Uganda and beyond.</p>
+                    </div>
+                    <div class="area">
+                        <h4><i class="fas fa-microchip"></i> Appropriate Technology</h4>
+                        <p>Creating technologies suited to local conditions and needs.</p>
+                    </div>
+                    <div class="area">
+                        <h4><i class="fas fa-water"></i> Water Technology</h4>
+                        <p>Innovations in water purification and distribution systems.</p>
+                    </div>
+                    <div class="area">
+                        <h4><i class="fas fa-robot"></i> Automation</h4>
+                        <p>Developing automated solutions for industrial applications.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="research-projects">
+                <h3>Current Projects</h3>
+                <div class="projects-grid">
+                    <div class="project">
+                        <h4>Solar-Powered Irrigation Systems</h4>
+                        <p>Developing affordable solar solutions for small-scale farmers to increase agricultural productivity.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="project">
+                        <h4>Biomass Energy Conversion</h4>
+                        <p>Researching efficient methods to convert agricultural waste into usable energy.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="project">
+                        <h4>Low-Cost Water Purification</h4>
+                        <p>Developing affordable water treatment systems for rural communities.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="research-partnerships">
+                <h3>Research Partnerships</h3>
+                <p>We collaborate with industry leaders, government agencies, and academic institutions worldwide to conduct impactful research that addresses pressing technical challenges.</p>
+                <a href="partners.html" class="btn btn-primary">View Our Partners</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>

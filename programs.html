@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explore technical education programs at Uganda Institute of Technical Excellence. Offering certificates, diplomas in engineering and technology fields.">
+    <meta name="keywords" content="Uganda technical education, engineering programs, technology courses, vocational training, technical certificates">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Our Programs | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Explore our technical education programs designed to meet Uganda's growing technical sector needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ugandatech.ac.ug/programmes">
+    <meta property="og:image" content="https://www.ugandatech.ac.ug/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Programs | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Explore our technical education programs designed to meet Uganda's growing technical sector needs.">
+    <meta name="twitter:image" content="https://www.ugandatech.ac.ug/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ugandatech.ac.ug/programmes">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Our Programs | Uganda Institute of Technical Excellence</title>
+    
+    <style>
+        :root {
+            --primary-color: #003366; /* Dark blue - professional/academic */
+            --secondary-color: #E57200; /* Orange - accent */
+            --accent-color: #008EAA; /* Teal */
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --gray-color: #6C757D;
+            --white-color: #FFFFFF;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-secondary: 'Roboto Slab', serif;
+            --transition: all 0.3s ease;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            --border-radius: 4px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white-color);
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.3;
+        }
+        
+        .page-header h1 {
+            font-family: var(--font-secondary);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .breadcrumb a {
+            color: var(--white-color);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 10px;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Programmes Section */
+        .programmes-page {
+            padding: 60px 0;
+        }
+        
+        .programmes-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .programmes-intro h2 {
+            font-family: var(--font-secondary);
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .programmes-intro p {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Category Cards */
+        .programme-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .category-card {
+            background: var(--white-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .category-card h3 {
+            font-family: var(--font-secondary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .category-card p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        
+        /* Programme Levels */
+        .programme-levels {
+            margin-bottom: 40px;
+        }
+        
+        .programme-levels h3 {
+            font-family: var(--font-secondary);
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .level {
+            background-color: var(--white-color);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+        
+        .level h4 {
+            font-family: var(--font-secondary);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .level p {
+            color: var(--gray-color);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 60px 0 30px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .programmes-intro h2 {
+                font-size: 1.7rem;
+            }
+            
+            .category-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .programmes-intro h2 {
+                font-size: 1.5rem;
+            }
+            
+            .programme-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programmes.html">Programs</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="programmes-page">
+        <div class="container">
+            <div class="programmes-intro">
+                <h2>Technical Education Programs</h2>
+                <p>We offer a wide range of programs designed to meet the needs of Uganda's growing technical sector.</p>
+            </div>
+            
+            <div class="programme-categories">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Engineering Programs</h3>
+                    <p>Comprehensive training in various engineering disciplines with hands-on experience.</p>
+                    <a href="engineering.html" class="btn btn-primary">Explore Engineering</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technology Programs</h3>
+                    <p>Cutting-edge courses in computing and information technology.</p>
+                    <a href="technology.html" class="btn btn-primary">Explore Technology</a>
+                </div>
+                
+                <!-- More category cards -->
+            </div>
+            
+            <div class="programme-levels">
+                <h3>Program Levels</h3>
+                <div class="levels-grid">
+                    <div class="level">
+                        <h4>Certificates</h4>
+                        <p>1-2 year programs providing foundational technical skills</p>
+                    </div>
+                    <div class="level">
+                        <h4>Diplomas</h4>
+                        <p>2-3 year programs offering comprehensive technical training</p>
+                    </div>
+                    <!-- More levels -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>

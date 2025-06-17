@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Uganda Institute of Technical Excellence for information about programs, admissions, and campus life.">
+    <meta name="keywords" content="Uganda Institute, Technical Education, Higher Education, Kampala, Uganda, Contact">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <meta property="og:title" content="Contact Us | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Get in touch with Uganda Institute of Technical Excellence for academic and administrative inquiries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/contact">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Contact Us | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #990000;
+            --accent-color: #FFCC00;
+            --text-color: #333333;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #495057;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('images/header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--accent-color);
+        }
+        
+        .breadcrumb i {
+            margin: 0 10px;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Contact Page Styles */
+        .contact-page {
+            padding: 60px 0;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contact-info h2, .contact-form h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-info h2::after, .contact-form h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .contact-info p {
+            margin-bottom: 30px;
+            color: var(--dark-gray);
+        }
+        
+        .info-item {
+            margin-bottom: 25px;
+        }
+        
+        .info-item h3 {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .info-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .info-item p {
+            margin: 5px 0;
+            padding-left: 28px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Form Styles */
+        .contact-form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Map Styles */
+        .map-container {
+            height: 400px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Accessibility Improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Focus styles for accessibility */
+        a:focus, button:focus, input:focus, select:focus, textarea:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header aria-label="Main header">
+        <!-- Navigation would go here -->
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact-page">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We're here to answer any questions you may have about our programs, admissions process, or campus life.</p>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Our Location</span></h3>
+                            <p>Plot 42, Industrial Area</p>
+                            <p>Kampala, Uganda</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-phone-alt" aria-hidden="true"></i> <span>Contact Details</span></h3>
+                            <p>General Inquiries: +256 414 123456</p>
+                            <p>Admissions Office: +256 414 123457</p>
+                            <p>Email: info@uite.ac.ug</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="sr-only">required</span><span aria-hidden="true">*</span></label>
+                                <input type="text" id="name" name="name" class="form-control" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="sr-only">required</span><span aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" class="form-control">
+                                    <option value="">Select Subject</option>
+                                    <option value="admissions">Admissions</option>
+                                    <option value="programs">Programs</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message <span class="sr-only">required</span><span aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536223157963!2d32.58151431475387!3d0.3137223640541905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb93c0005aab%3A0x8e7fd7dc8f3e4a4!2sIndustrial%20Area%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1623941234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="Map of Uganda Institute of Technical Excellence Location"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content would go here -->
+    </footer>
+</body>
+</html>

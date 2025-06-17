@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our accredited engineering programs at Uganda Institute of Technical Excellence, offering hands-on training in mechanical, electrical, civil, and more engineering disciplines.">
+    <meta name="keywords" content="engineering programs Uganda, technical education, mechanical engineering diploma, electrical engineering courses, UITE engineering">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <meta property="og:title" content="Engineering Programs | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Comprehensive engineering education combining theory with practical training in state-of-the-art facilities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/programs/engineering">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/engineering-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#003366">
+    <link rel="canonical" href="https://www.uite.ac.ug/programs/engineering">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <title>Engineering Programs | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #E57200;
+            --accent-color: #5B8C5A;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --text-color: #333333;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+            max-width: 75ch;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 0 3rem;
+            position: relative;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+            margin-right: 0.5rem;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Engineering Page Content */
+        .engineering-page {
+            padding: 5rem 0;
+        }
+        
+        .programs-intro {
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+        
+        /* Programs Grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .program-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .program-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .program-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .program-card:hover .program-image img {
+            transform: scale(1.05);
+        }
+        
+        .program-content {
+            padding: 1.5rem;
+        }
+        
+        .duration {
+            display: inline-block;
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            margin-top: 1rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        /* Facilities Section */
+        .engineering-facilities {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-top: 4rem;
+        }
+        
+        .engineering-facilities h3 {
+            margin-top: 0;
+        }
+        
+        .engineering-facilities ul {
+            columns: 2;
+            column-gap: 2rem;
+            margin: 1.5rem 0;
+            list-style-position: inside;
+        }
+        
+        .engineering-facilities li {
+            margin-bottom: 0.75rem;
+            break-inside: avoid;
+        }
+        
+        /* Accreditation Badge */
+        .accreditation-badge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 3rem;
+        }
+        
+        .accreditation-badge img {
+            width: 80px;
+            height: auto;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .engineering-facilities ul {
+                columns: 1;
+            }
+            
+            .accreditation-badge {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Engineering Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programs.html">Programs</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="engineering.html">Engineering</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="engineering-page">
+        <div class="container">
+            <div class="programs-intro">
+                <h2>Engineering Education for the Future</h2>
+                <p>Our engineering programs combine rigorous theoretical training with extensive practical experience in well-equipped workshops and laboratories. Accredited by the Uganda Engineering Registration Board, our programs prepare students for both immediate employment and further academic advancement.</p>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1581093057305-3fe6ab6c1c99?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mechanical Engineering" loading="lazy">
+                    </div>
+                    <div class="program-content">
+                        <h3>Diploma in Mechanical Engineering</h3>
+                        <span class="duration">3 Years</span>
+                        <p>Comprehensive training in mechanical systems design, manufacturing, and maintenance. Includes specialization tracks in automotive systems and industrial plant engineering.</p>
+                        <a href="mechanical-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Electrical Engineering" loading="lazy">
+                    </div>
+                    <div class="program-content">
+                        <h3>Diploma in Electrical Engineering</h3>
+                        <span class="duration">3 Years</span>
+                        <p>Training in power systems, control engineering, and renewable energy technologies with hands-on experience in our high-voltage labs.</p>
+                        <a href="electrical-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Civil Engineering" loading="lazy">
+                    </div>
+                    <div class="program-content">
+                        <h3>Diploma in Civil Engineering</h3>
+                        <span class="duration">3 Years</span>
+                        <p>Focus on infrastructure development, structural design, and construction management with field training on real projects.</p>
+                        <a href="civil-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Computer Engineering" loading="lazy">
+                    </div>
+                    <div class="program-content">
+                        <h3>Diploma in Computer Engineering</h3>
+                        <span class="duration">3 Years</span>
+                        <p>Combines hardware and software engineering with emphasis on embedded systems, networking, and IoT applications.</p>
+                        <a href="computer-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accreditation-badge">
+                <img src="https://via.placeholder.com/150x150?text=UERB" alt="Uganda Engineering Registration Board" loading="lazy">
+                <div>
+                    <h3>Accredited Programs</h3>
+                    <p>All our engineering programs are fully accredited by the Uganda Engineering Registration Board (UERB) and recognized throughout East Africa.</p>
+                </div>
+            </div>
+            
+            <div class="engineering-facilities">
+                <h3>Our Engineering Facilities</h3>
+                <p>Students benefit from access to state-of-the-art facilities that provide hands-on experience with industry-standard equipment:</p>
+                <ul>
+                    <li>Fully equipped mechanical workshops with CNC machines</li>
+                    <li>Automation and robotics labs with PLC training stations</li>
+                    <li>CAD/CAM design studios with latest software</li>
+                    <li>Materials testing laboratory with universal testing machines</li>
+                    <li>High-voltage electrical engineering lab</li>
+                    <li>Hydraulics and pneumatics training systems</li>
+                    <li>Civil engineering materials and structures lab</li>
+                    <li>Electronics and microcontroller development labs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Professional development short courses at Uganda Institute of Technical Excellence - intensive training for working professionals and career changers">
+    <meta name="keywords" content="short courses, professional development, Uganda, technical training, computer skills, web development, solar installation">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Short Courses | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Professional development short courses for skill enhancement">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/short-courses">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/short-courses-og.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Short Courses | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Professional development short courses for skill enhancement">
+    <meta name="twitter:image" content="https://www.uite.ac.ug/images/short-courses-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Short Courses | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #2C3E50; /* Professional dark blue */
+            --secondary-color: #E74C3C; /* Vibrant accent color */
+            --accent-color: #3498DB; /* Complementary blue */
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #495057;
+            --text-color: #212529;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+            --border-radius: 6px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            font-size: 1rem;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+        
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Main Content */
+        .short-courses-page {
+            padding: 4rem 0;
+        }
+        
+        .courses-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .courses-intro h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .courses-intro h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .courses-intro p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Courses Categories */
+        .courses-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .category {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category h3 i {
+            margin-right: 12px;
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+        }
+        
+        .category ul {
+            list-style-type: none;
+        }
+        
+        .category li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--medium-gray);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .category li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Upcoming Sessions Table */
+        .upcoming-sessions {
+            background-color: var(--light-gray);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+        
+        .upcoming-sessions h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.75rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 2rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border: 2px solid var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .courses-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .upcoming-sessions {
+                padding: 1.5rem;
+                overflow-x: auto;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Short Courses</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programs.html">Programs</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="short-courses.html">Short Courses</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="short-courses-page">
+        <div class="container">
+            <div class="courses-intro">
+                <h2>Professional Development Courses</h2>
+                <p>Enhance your skills with our intensive short courses designed for working professionals and career changers. All courses include practical hands-on training and result in a certificate of completion.</p>
+            </div>
+            
+            <div class="courses-categories">
+                <div class="category">
+                    <h3><i class="fas fa-laptop-code"></i> Technology Courses</h3>
+                    <ul>
+                        <li>Basic Computer Skills <span>4 weeks</span></li>
+                        <li>Web Development Fundamentals <span>6 weeks</span></li>
+                        <li>Digital Marketing Essentials <span>5 weeks</span></li>
+                        <li>Graphic Design with Adobe Suite <span>8 weeks</span></li>
+                        <li>Mobile App Development <span>10 weeks</span></li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-bolt"></i> Engineering Courses</h3>
+                    <ul>
+                        <li>Solar Panel Installation <span>8 weeks</span></li>
+                        <li>Basic Electrical Wiring <span>6 weeks</span></li>
+                        <li>Plumbing Systems Maintenance <span>5 weeks</span></li>
+                        <li>Auto Mechanics Fundamentals <span>8 weeks</span></li>
+                        <li>Masonry Techniques <span>6 weeks</span></li>
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h3><i class="fas fa-chart-line"></i> Business Courses</h3>
+                    <ul>
+                        <li>Entrepreneurship Training <span>4 weeks</span></li>
+                        <li>QuickBooks Accounting <span>5 weeks</span></li>
+                        <li>Project Management Basics <span>6 weeks</span></li>
+                        <li>Customer Service Excellence <span>3 weeks</span></li>
+                        <li>Business Communication Skills <span>4 weeks</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="upcoming-sessions">
+                <h3>Upcoming Sessions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Start Date</th>
+                            <th>Duration</th>
+                            <th>Schedule</th>
+                            <th>Fee</th>
+                            <th>Enrollment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Computer Skills</td>
+                            <td>July 5, 2023</td>
+                            <td>4 weeks</td>
+                            <td>Mon-Wed-Fri, 6-8pm</td>
+                            <td>UGX 250,000</td>
+                            <td><a href="#" class="btn btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>Web Development Fundamentals</td>
+                            <td>July 10, 2023</td>
+                            <td>6 weeks</td>
+                            <td>Tue-Thu, 6-9pm</td>
+                            <td>UGX 400,000</td>
+                            <td><a href="#" class="btn btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>Solar Panel Installation</td>
+                            <td>July 15, 2023</td>
+                            <td>8 weeks</td>
+                            <td>Sat, 9am-3pm</td>
+                            <td>UGX 600,000</td>
+                            <td><a href="#" class="btn btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>Entrepreneurship Training</td>
+                            <td>July 3, 2023</td>
+                            <td>4 weeks</td>
+                            <td>Mon-Wed, 5-7pm</td>
+                            <td>UGX 300,000</td>
+                            <td><a href="#" class="btn btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Design with Adobe Suite</td>
+                            <td>July 20, 2023</td>
+                            <td>8 weeks</td>
+                            <td>Sat-Sun, 10am-2pm</td>
+                            <td>UGX 550,000</td>
+                            <td><a href="#" class="btn btn-primary">Apply Now</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would be here -->
+    
+    <!-- Scripts -->
+    <script>
+        // Document loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any JavaScript functionality would go here
+            console.log('Short courses page loaded');
+            
+            // Example: Add click event to all apply buttons
+            const applyButtons = document.querySelectorAll('.btn-primary');
+            applyButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // In a real implementation, this would open an application form
+                    alert('Application form will open in a new window');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

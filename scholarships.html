@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover scholarship opportunities at Uganda Institute of Technical Excellence including merit-based, need-based, and special talent awards for technical education.">
+    <meta name="keywords" content="UITE scholarships, technical education funding, Uganda student financial aid, engineering scholarships, vocational training grants">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <meta property="og:title" content="Scholarships | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Financial aid opportunities to support deserving students in pursuing technical education at UITE.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/admissions/scholarships">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/scholarships-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#003366">
+    <link rel="canonical" href="https://www.uite.ac.ug/admissions/scholarships">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <title>Scholarships | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #E57200;
+            --accent-color: #5B8C5A;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --text-color: #333333;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        h3 i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+            max-width: 75ch;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 0 3rem;
+            position: relative;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+            margin-right: 0.5rem;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Scholarships Page Content */
+        .scholarships-page {
+            padding: 5rem 0;
+        }
+        
+        .scholarships-intro {
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+        
+        /* Scholarships Categories */
+        .scholarships-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .category {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-top: 4px solid var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            margin-top: 1.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        /* Application Process */
+        .application-process {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-top: 4rem;
+        }
+        
+        .application-process ol {
+            margin: 1.5rem 0 2rem 1.5rem;
+            counter-reset: item;
+        }
+        
+        .application-process li {
+            margin-bottom: 1rem;
+            counter-increment: item;
+            position: relative;
+            padding-left: 2.5rem;
+        }
+        
+        .application-process li:before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .deadline-notice {
+            background-color: rgba(229, 114, 0, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-top: 2rem;
+        }
+        
+        /* Scholarship Stats */
+        .scholarship-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .application-process {
+                padding: 2rem 1.5rem;
+            }
+            
+            .scholarship-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Scholarships & Financial Aid</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="admissions.html">Admissions</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="scholarships.html">Scholarships</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="scholarships-page">
+        <div class="container">
+            <div class="scholarships-intro">
+                <h2>Funding Your Education</h2>
+                <p>We offer various scholarship opportunities to support deserving students in pursuing technical education. Our financial aid programs ensure that talented individuals can access quality education regardless of their economic background.</p>
+            </div>
+            
+            <div class="scholarship-stats">
+                <div class="stat-item">
+                    <div class="stat-number">75+</div>
+                    <div class="stat-label">Scholarships Awarded Annually</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Students Receiving Financial Aid</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5M+</div>
+                    <div class="stat-label">UGX in Annual Scholarship Funds</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Corporate Scholarship Partners</div>
+                </div>
+            </div>
+            
+            <div class="scholarships-categories">
+                <div class="category">
+                    <h3><i class="fas fa-award"></i> Merit-Based Scholarships</h3>
+                    <p>Awarded to students with outstanding academic performance in their previous studies (minimum 3.8 GPA or equivalent). Covers up to 100% of tuition fees based on academic excellence.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-hands-helping"></i> Need-Based Scholarships</h3>
+                    <p>For students from economically disadvantaged backgrounds who demonstrate academic potential. Requires proof of financial need. Covers 50-75% of tuition costs.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-female"></i> Women in STEM Scholarships</h3>
+                    <p>Special initiative to encourage female participation in technical fields. Open to all female applicants pursuing engineering or technology programs.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-briefcase"></i> Corporate-Sponsored Scholarships</h3>
+                    <p>Partner companies provide funding for students in specific disciplines, often including internship opportunities. Various eligibility criteria apply.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="application-process">
+                <h3>How to Apply for Scholarships</h3>
+                <p>Follow these steps to be considered for financial aid at Uganda Institute of Technical Excellence:</p>
+                <ol>
+                    <li>Complete the regular admission application through our online portal or in-person at the admissions office</li>
+                    <li>Submit a separate scholarship application form (available from the financial aid office or website)</li>
+                    <li>Provide all required supporting documents including:
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Academic records and certificates</li>
+                            <li>Two recommendation letters</li>
+                            <li>Personal statement (for merit-based scholarships)</li>
+                            <li>Proof of income (for need-based scholarships)</li>
+                        </ul>
+                    </li>
+                    <li>Ensure all materials are submitted before the deadline</li>
+                    <li>Shortlisted candidates may be invited for an interview</li>
+                </ol>
+                
+                <div class="deadline-notice">
+                    <h4>Important Notice</h4>
+                    <p>The deadline for scholarship applications for the 2023/2024 academic year is July 15, 2023. Late applications will not be considered.</p>
+                </div>
+                
+                <p style="margin-top: 2rem;">For more information, please contact our Financial Aid Office at <a href="mailto:finaid@uite.ac.ug">finaid@uite.ac.ug</a> or call +256 414 123 456.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>

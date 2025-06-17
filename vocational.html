@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Uganda Institute of Technical Excellence offers practical vocational programs providing hands-on training in high-demand trades for immediate employment.">
+    <meta name="keywords" content="vocational training, technical education, Uganda, skilled trades, electrical installation, practical skills">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Vocational Programs | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Practical skills training for immediate employment in high-demand trades">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/vocational">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/vocational-og.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vocational Programs | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Practical skills training for immediate employment in high-demand trades">
+    <meta name="twitter:image" content="https://www.uite.ac.ug/images/vocational-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Vocational Programs | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #1A4B6D; /* Professional navy blue */
+            --secondary-color: #D4A418; /* Gold accent for vocational/trades */
+            --accent-color: #3A7D44; /* Complementary green */
+            --light-gray: #F5F5F5;
+            --medium-gray: #E0E0E0;
+            --dark-gray: #424242;
+            --text-color: #212121;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            font-size: 1rem;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background-color: var(--primary-color);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('vocational-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 5rem 0 2.5rem;
+            position: relative;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Main Content */
+        .vocational-page {
+            padding: 4rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .programs-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .programs-intro h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .programs-intro h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+        
+        .programs-intro p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Programs Grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .program-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .program-image {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .program-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .program-card:hover .program-image img {
+            transform: scale(1.05);
+        }
+        
+        .program-content {
+            padding: 1.75rem;
+        }
+        
+        .duration {
+            display: inline-block;
+            font-size: 0.85rem;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Vocational Specific Styles */
+        .vocational-features {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0;
+            margin: 4rem 0;
+        }
+        
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-item h3 {
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header {
+                padding: 3rem 0 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Vocational Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programs.html">Programs</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="vocational.html">Vocational</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="vocational-page">
+        <div class="container">
+            <div class="programs-intro">
+                <h2>Practical Skills for Immediate Employment</h2>
+                <p>Our vocational programs provide hands-on training in high-demand trades, preparing students for direct entry into the workforce. Accredited by the Directorate of Industrial Training (DIT) and Uganda Vocational Qualifications Framework (UVQF).</p>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="electrical-installation.jpg" alt="Students practicing electrical wiring in workshop">
+                    </div>
+                    <div class="program-content">
+                        <h3>Certificate in Electrical Installation</h3>
+                        <span class="duration">1 Year</span>
+                        <p>Practical training in domestic and industrial electrical systems, wiring regulations, and safety procedures. Graduates qualify for certification as electrical technicians.</p>
+                        <a href="electrical-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <!-- Additional program cards would follow the same structure -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="plumbing.jpg" alt="Plumbing students working on pipes">
+                    </div>
+                    <div class="program-content">
+                        <h3>Certificate in Plumbing</h3>
+                        <span class="duration">1 Year</span>
+                        <p>Comprehensive training in modern plumbing techniques, pipe fitting, and sanitation systems installation and maintenance.</p>
+                        <a href="plumbing-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="carpentry.jpg" alt="Carpentry students building furniture">
+                    </div>
+                    <div class="program-content">
+                        <h3>Certificate in Carpentry</h3>
+                        <span class="duration">1 Year</span>
+                        <p>Hands-on instruction in woodworking, furniture making, and construction carpentry using both traditional and modern techniques.</p>
+                        <a href="carpentry-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vocational-features">
+        <div class="container">
+            <div class="features-container">
+                <div class="feature-item">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>Industry-Standard Workshops</h3>
+                    <p>Train with professional-grade tools and equipment used in the field</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Experienced Instructors</h3>
+                    <p>Learn from tradespeople with years of practical experience</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>National Certification</h3>
+                    <p>Graduate with recognized vocational qualifications</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Job Placement</h3>
+                    <p>Access to our network of employer partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would be here -->
+    
+    <!-- Scripts -->
+    <script>
+        // Document loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any JavaScript functionality would go here
+            console.log('Vocational programs page loaded');
+        });
+    </script>
+</body>
+</html>

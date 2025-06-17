@@ -1,0 +1,3265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Institute of Technical Excellence | Premier Technical Education</title>
+    <meta name="description" content="Uganda's leading technical education institution offering world-class engineering, technology and vocational programs since 1972.">
+    <meta name="keywords" content="technical institute Uganda, engineering school, vocational training, technology education, Uganda technical college">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary: #003366; /* Deep blue */
+            --primary-light: #1a4d8c;
+            --secondary: #cc5500; /* Burnt orange */
+            --secondary-light: #e67300;
+            --accent: #4a8f29; /* Green */
+            --light: #f8f9fa;
+            --light-gray: #e9ecef;
+            --medium-gray: #6c757d;
+            --dark: #212529;
+            --white: #ffffff;
+            --black: #000000;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+            --transition: all 0.3s ease;
+            --border-radius: 6px;
+            --border-radius-lg: 12px;
+            --max-width: 1400px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.95rem;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-light);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-accent:hover {
+            background-color: #3a7a21;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            margin: 1.5rem auto;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--medium-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        /* ===== Header ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .top-bar {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-bar-link {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+        }
+
+        .top-bar-link:hover {
+            color: var(--white);
+        }
+
+        .top-bar-link i {
+            margin-right: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            font-size: 0.8rem;
+            color: var(--medium-gray);
+            font-weight: 500;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            box-shadow: var(--shadow-md);
+            border-radius: var(--border-radius);
+            padding: 15px 0;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 100;
+        }
+
+        .dropdown-item {
+            padding: 8px 20px;
+        }
+
+        .dropdown-link {
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .dropdown-link:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            top: calc(100% + 5px);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            padding-top: 120px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        /* ===== Quick Links ===== */
+        .quick-links {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 30px 0;
+            position: relative;
+            z-index: 10;
+            margin-top: -50px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .quick-links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .quick-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .quick-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .quick-link-icon {
+            font-size: 1.8rem;
+            color: var(--secondary);
+        }
+
+        .quick-link-text h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--white);
+        }
+
+        .quick-link-text p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* ===== About Section ===== */
+        .about {
+            background-color: var(--white);
+            position: relative;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 25px 20px;
+            border-radius: var(--border-radius);
+            background-color: var(--light);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .feature h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* ===== Programs Section ===== */
+        .programs {
+            background-color: var(--light-gray);
+        }
+
+        .programs-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background-color: var(--white);
+            color: var(--primary);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .tab-btn:hover:not(.active) {
+            background-color: rgba(0, 51, 102, 0.1);
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .program-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .program-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .program-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .program-card:hover .program-image img {
+            transform: scale(1.1);
+        }
+
+        .program-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        .program-content {
+            padding: 25px;
+        }
+
+        .program-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .program-duration {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .program-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+        }
+
+        .program-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .program-apply {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        /* ===== Stats Section ===== */
+        .stats {
+            background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-item {
+            padding: 30px 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .stat-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* ===== Faculty Section ===== */
+        .faculty {
+            background-color: var(--white);
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .faculty-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faculty-image {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .faculty-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .faculty-card:hover .faculty-image img {
+            transform: scale(1.05);
+        }
+
+        .faculty-content {
+            padding: 25px;
+        }
+
+        .faculty-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .faculty-position {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .faculty-bio {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+        }
+
+        .faculty-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .faculty-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--light);
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .faculty-social a:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* ===== Testimonials Section ===== */
+        .testimonials {
+            background-color: var(--light-gray);
+        }
+
+        .testimonial-slider {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .testimonial:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .testimonial-content::before,
+        .testimonial-content::after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+            line-height: 1;
+        }
+
+        .testimonial-content::before {
+            top: -15px;
+            left: -10px;
+        }
+
+        .testimonial-content::after {
+            bottom: -40px;
+            right: -10px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid var(--secondary);
+        }
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-info p {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        /* ===== News Section ===== */
+        .news {
+            background-color: var(--white);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .news-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.1);
+        }
+
+        .news-date {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        .news-content {
+            padding: 25px;
+        }
+
+        .news-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-meta {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .news-meta i {
+            color: var(--secondary);
+            margin-right: 5px;
+        }
+
+        .news-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+        }
+
+        .news-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .news-category {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ===== CTA Section ===== */
+        .cta {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-about {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        .footer-logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-logo-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.1;
+        }
+
+        .footer-logo-subtitle {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h3,
+        .footer-newsletter h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-newsletter p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            font-family: inherit;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+        }
+
+        .btn-small {
+            padding: 12px 20px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            background-color: var(--secondary);
+            color: var(--white);
+            border: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* ===== Back to Top Button ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--secondary-light);
+            transform: translateY(-3px);
+        }
+
+        /* ===== Page Header ===== */
+        .page-header {
+            height: 400px;
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            padding-top: 120px;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--secondary);
+        }
+
+        .breadcrumb i {
+            margin: 0 5px;
+        }
+
+        /* ===== About Page ===== */
+        .about-page {
+            padding: 80px 0;
+        }
+
+        .about-page-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .about-page-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-page-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .about-page-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-page-text p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .mission-card,
+        .vision-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .mission-card h3,
+        .vision-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .mission-card p,
+        .vision-card p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .history-timeline {
+            margin: 50px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--secondary);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px 0 20px 30px;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: -8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        /* ===== Programs Page ===== */
+        .programs-page {
+            padding: 80px 0;
+        }
+
+        .program-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .category-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .category-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .category-card:hover .category-image img {
+            transform: scale(1.1);
+        }
+
+        .category-content {
+            padding: 25px;
+        }
+
+        .category-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .program-details {
+            margin: 50px 0;
+        }
+
+        .program-details h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .program-details p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .program-structure h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+
+        .structure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .structure-table th,
+        .structure-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .structure-table th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .structure-table tr:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        /* ===== Gallery Page ===== */
+        .gallery-page {
+            padding: 80px 0;
+        }
+
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            background-color: var(--white);
+            color: var(--primary);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .filter-btn:hover:not(.active) {
+            background-color: rgba(0, 51, 102, 0.1);
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 250px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 51, 102, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* ===== Blog Page ===== */
+        .blog-page {
+            padding: 80px 0;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .blog-post {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .blog-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-post:hover .blog-image img {
+            transform: scale(1.1);
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
+
+        .blog-meta i {
+            color: var(--secondary);
+            margin-right: 5px;
+        }
+
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .blog-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .blog-category {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--border-radius);
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .page-link.active,
+        .page-link:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* ===== Single Blog Post ===== */
+        .single-post {
+            padding: 80px 0;
+        }
+
+        .post-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .post-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+        }
+
+        .post-meta i {
+            color: var(--secondary);
+            margin-right: 5px;
+        }
+
+        .featured-image {
+            margin-bottom: 40px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .post-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1.2rem;
+        }
+
+        .post-content blockquote {
+            border-left: 4px solid var(--secondary);
+            padding-left: 20px;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--medium-gray);
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 10px;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 5px 15px;
+            background-color: var(--light);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .post-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary);
+        }
+
+        /* ===== Contact Page ===== */
+        .contact-page {
+            padding: 80px 0;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 2rem;
+            color: var(--medium-gray);
+            line-height: 1.8;
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item h3 i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+
+        .info-item p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            transition: var(--transition);
+            background-color: var(--light);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.2);
+            background-color: var(--white);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .map-container {
+            margin-top: 50px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        /* ===== Responsive Styles ===== */
+        @media (max-width: 1200px) {
+            .section {
+                padding: 80px 0;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .nav-list {
+                gap: 20px;
+            }
+            
+            .quick-links-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .nav-list {
+                position: fixed;
+                top: 140px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 140px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 40px;
+                gap: 30px;
+                transition: var(--transition);
+                overflow-y: auto;
+            }
+
+            .nav-list.active {
+                left: 0;
+            }
+
+            .nav-item {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                background-color: transparent;
+                padding: 10px 0;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+            }
+
+            .nav-item:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-item {
+                padding: 8px 0;
+            }
+
+            .dropdown-link {
+                color: var(--medium-gray);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .quick-links-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-links">
+                <a href="#" class="top-bar-link"><i class="fas fa-envelope"></i> info@uite.ac.ug</a>
+                <a href="#" class="top-bar-link"><i class="fas fa-phone-alt"></i> +256 414 123456</a>
+            </div>
+            <div class="top-bar-links">
+                <a href="#" class="top-bar-link"><i class="fas fa-sign-in-alt"></i> Student Portal</a>
+                <a href="#" class="top-bar-link"><i class="fas fa-user-shield"></i> Staff Portal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="https://via.placeholder.com/50x50?text=UITE" alt="Uganda Institute of Technical Excellence Logo">
+                    <div class="logo-text">
+                        <div class="logo-title">Uganda Institute</div>
+                        <div class="logo-subtitle">of Technical Excellence</div>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="about.html" class="dropdown-link">About Us</a></li>
+                                <li class="dropdown-item"><a href="history.html" class="dropdown-link">History</a></li>
+                                <li class="dropdown-item"><a href="governance.html" class="dropdown-link">Governance</a></li>
+                                <li class="dropdown-item"><a href="partners.html" class="dropdown-link">Partners</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="programmes.html" class="nav-link">Programs</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="engineering.html" class="dropdown-link">Engineering</a></li>
+                                <li class="dropdown-item"><a href="technology.html" class="dropdown-link">Technology</a></li>
+                                <li class="dropdown-item"><a href="vocational.html" class="dropdown-link">Vocational</a></li>
+                                <li class="dropdown-item"><a href="short-courses.html" class="dropdown-link">Short Courses</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="admissions.html" class="nav-link">Admissions</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="requirements.html" class="dropdown-link">Requirements</a></li>
+                                <li class="dropdown-item"><a href="application.html" class="dropdown-link">Application</a></li>
+                                <li class="dropdown-item"><a href="fees.html" class="dropdown-link">Fees Structure</a></li>
+                                <li class="dropdown-item"><a href="scholarships.html" class="dropdown-link">Scholarships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="research.html" class="nav-link">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Shaping Uganda's Technical Future</h1>
+            <p class="hero-subtitle">Uganda's premier institution for engineering, technology and vocational education since 1972</p>
+            <div class="hero-btns">
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                <a href="programmes.html" class="btn btn-secondary">Explore Programs</a>
+            </div>
+        </div>
+        <a href="#quick-links" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section id="quick-links" class="quick-links">
+        <div class="container">
+            <div class="quick-links-container">
+                <a href="admissions.html" class="quick-link">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="quick-link-text">
+                        <h3>Admissions</h3>
+                        <p>Requirements & Application</p>
+                    </div>
+                </a>
+                <a href="programmes.html" class="quick-link">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="quick-link-text">
+                        <h3>Programs</h3>
+                        <p>Explore Our Courses</p>
+                    </div>
+                </a>
+                <a href="research.html" class="quick-link">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="quick-link-text">
+                        <h3>Research</h3>
+                        <p>Innovation & Projects</p>
+                    </div>
+                </a>
+                <a href="contact.html" class="quick-link">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="quick-link-text">
+                        <h3>Visit Us</h3>
+                        <p>Campus Tours</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section">
+        <div class="container">
+            <h2 class="section-title">About UITE</h2>
+            <p class="section-subtitle">Uganda Institute of Technical Excellence has been the nation's leader in technical education for over 50 years</p>
+            
+            <div class="about-container">
+                <div class="about-image">
+                    <span class="about-badge">Since 1972</span>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UITE Campus" loading="lazy" />
+                </div>
+                <div class="about-content">
+                    <h2>Uganda's Premier Technical Institution</h2>
+                    <p>Founded in 1972, the Uganda Institute of Technical Excellence (UITE) has grown to become the nation's foremost institution for engineering, technology and vocational education. Our mission is to provide world-class technical training that meets international standards while addressing Uganda's developmental needs.</p>
+                    <p>With state-of-the-art facilities, industry-experienced faculty, and strong partnerships with leading corporations, UITE offers students unparalleled opportunities to develop practical skills and theoretical knowledge that prepares them for successful careers.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Accredited Programs</h4>
+                            <p>All our programs are accredited by the National Council for Higher Education</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4>Industry Links</h4>
+                            <p>Strong partnerships with leading national and international companies</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>95% Employment</h4>
+                            <p>Our graduates enjoy excellent employment rates within 6 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs section">
+        <div class="container">
+            <h2 class="section-title">Our Programs</h2>
+            <p class="section-subtitle">Choose from our wide range of accredited technical programs designed for career success</p>
+            
+            <div class="programs-tabs">
+                <button class="tab-btn active" data-tab="engineering">Engineering</button>
+                <button class="tab-btn" data-tab="technology">Technology</button>
+                <button class="tab-btn" data-tab="vocational">Vocational</button>
+                <button class="tab-btn" data-tab="short-courses">Short Courses</button>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <span class="program-category">Engineering</span>
+                        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mechanical Engineering" loading="lazy" />
+                    </div>
+                    <div class="program-content">
+                        <h3>Mechanical Engineering</h3>
+                        <span class="program-duration">3 Year Diploma</span>
+                        <p>Comprehensive training in mechanical systems design, manufacturing, and maintenance with hands-on workshop experience.</p>
+                        <div class="program-footer">
+                            <span class="program-apply">Next Intake: August 2023</span>
+                            <a href="mechanical-engineering.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <span class="program-category">Technology</span>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Computer Science" loading="lazy" />
+                    </div>
+                    <div class="program-content">
+                        <h3>Computer Science</h3>
+                        <span class="program-duration">2 Year Certificate</span>
+                        <p>Cutting-edge curriculum covering programming, databases, networking, and software development with industry-standard tools.</p>
+                        <div class="program-footer">
+                            <span class="program-apply">Next Intake: August 2023</span>
+                            <a href="computer-science.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <span class="program-category">Vocational</span>
+                        <img src="https://images.unsplash.com/photo-1581093057305-25a8e1e0eaf3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Electrical Installation" loading="lazy" />
+                    </div>
+                    <div class="program-content">
+                        <h3>Electrical Installation</h3>
+                        <span class="program-duration">1 Year Certificate</span>
+                        <p>Practical training in domestic and industrial electrical systems, wiring regulations, and safety procedures.</p>
+                        <div class="program-footer">
+                            <span class="program-apply">Next Intake: August 2023</span>
+                            <a href="electrical-installation.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="programs.html" class="btn btn-primary">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-text">Years of Excellence</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-text">Current Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-text">Graduate Employment</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-text">Industry Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="faculty section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Faculty</h2>
+            <p class="section-subtitle">Learn from industry-experienced professionals and academic experts</p>
+            
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Robert Mugisha" loading="lazy" />
+                    </div>
+                    <div class="faculty-content">
+                        <h3>Dr. Robert Mugisha</h3>
+                        <span class="faculty-position">Dean of Engineering</span>
+                        <p class="faculty-bio">PhD in Mechanical Engineering with 15 years of industry experience at leading manufacturing firms in East Africa.</p>
+                        <div class="faculty-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Prof. Sarah Nalwoga" loading="lazy" />
+                    </div>
+                    <div class="faculty-content">
+                        <h3>Prof. Sarah Nalwoga</h3>
+                        <span class="faculty-position">Head of Computer Science</span>
+                        <p class="faculty-bio">Former software architect with Google Africa, specializing in AI and machine learning applications.</p>
+                        <div class="faculty-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Eng. James Kato" loading="lazy" />
+                    </div>
+                    <div class="faculty-content">
+                        <h3>Eng. James Kato</h3>
+                        <span class="faculty-position">Electrical Department</span>
+                        <p class="faculty-bio">Registered professional engineer with extensive experience in renewable energy systems design.</p>
+                        <div class="faculty-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="faculty.html" class="btn btn-primary">View All Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-title">Student & Alumni Stories</h2>
+            <p class="section-subtitle">Hear from those who have experienced UITE firsthand</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The practical approach to learning at UITE gave me the hands-on skills that made me stand out to employers. Within a month of graduating, I had three job offers in the automotive industry."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Ochieng" loading="lazy" />
+                        </div>
+                        <div class="author-info">
+                            <h4>David Ochieng</h4>
+                            <p>Mechanical Engineering, Class of 2020</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The industry connections UITE facilitated were invaluable. My internship at a leading tech company turned into a full-time position before I even graduated from the Computer Science program."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Grace Akello" loading="lazy" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Grace Akello</h4>
+                            <p>Computer Science, Class of 2021</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"After completing the Electrical Installation course, I started my own contracting business. The practical skills and business training I received gave me the confidence to be my own boss."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Joseph Ssebaggala" loading="lazy" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Joseph Ssebaggala</h4>
+                            <p>Vocational Graduate, Class of 2019</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news section">
+        <div class="container">
+            <h2 class="section-title">Latest News & Events</h2>
+            <p class="section-subtitle">Stay updated with what's happening at UITE</p>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">June 15, 2023</span>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Graduation Ceremony" loading="lazy" />
+                    </div>
+                    <div class="news-content">
+                        <h3>Annual Graduation Ceremony 2023</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 30, 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Campus</span>
+                        </div>
+                        <p>Join us as we celebrate the achievements of our graduating class of 2023. Over 1,200 students will receive their diplomas and certificates.</p>
+                        <div class="news-footer">
+                            <span class="news-category">Event</span>
+                            <a href="graduation-2023.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">June 10, 2023</span>
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="New Engineering Lab" loading="lazy" />
+                    </div>
+                    <div class="news-content">
+                        <h3>New Engineering Lab Opened</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 10, 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Engineering Block</span>
+                        </div>
+                        <p>Funded by a partnership with Siemens, our new state-of-the-art engineering laboratory features the latest equipment for hands-on training.</p>
+                        <div class="news-footer">
+                            <span class="news-category">Facilities</span>
+                            <a href="new-engineering-lab.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">June 5, 2023</span>
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hackathon Winners" loading="lazy" />
+                    </div>
+                    <div class="news-content">
+                        <h3>UITE Students Win National Hackathon</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 5, 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kampala</span>
+                        </div>
+                        <p>Our computer science team developed an innovative agricultural solution that won first prize at the National Tech Innovation Challenge.</p>
+                        <div class="news-footer">
+                            <span class="news-category">Achievement</span>
+                            <a href="hackathon-winners.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="blog.html" class="btn btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <h2>Ready to Start Your Technical Journey?</h2>
+            <p>Applications for the August 2023 intake are now open. Join Uganda's premier technical institution and gain the skills that employers value.</p>
+            <div class="hero-btns">
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/50x50?text=UITE" alt="Uganda Institute of Technical Excellence Logo">
+                        <div class="footer-logo-text">
+                            <div class="footer-logo-title">Uganda Institute</div>
+                            <div class="footer-logo-subtitle">of Technical Excellence</div>
+                        </div>
+                    </div>
+                    <p>Uganda's premier technical education institution offering world-class engineering, technology and vocational programs since 1972.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="engineering.html">Engineering</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="vocational.html">Vocational</a></li>
+                        <li><a href="short-courses.html">Short Courses</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="diplomas.html">Diplomas</a></li>
+                        <li><a href="degrees.html">Degrees</a></li>
+                        <li><a href="postgraduate.html">Postgraduate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on programs, events, and important announcements.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Plot 42, Industrial Area, Kampala</p>
+                        <p><i class="fas fa-phone-alt"></i> +256 414 123456</p>
+                        <p><i class="fas fa-envelope"></i> info@uite.ac.ug</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Uganda Institute of Technical Excellence. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- ===== Page Templates ===== -->
+    <!-- About Page -->
+    <div class="page-header">
+        <div class="container">
+            <h1>About UITE</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-page">
+        <div class="container">
+            <div class="about-page-content">
+                <div class="about-page-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UITE Campus" loading="lazy" />
+                </div>
+                <div class="about-page-text">
+                    <h2>Our History</h2>
+                    <p>Founded in 1972 as the Uganda Technical College, our institution has grown from humble beginnings to become the nation's premier technical education provider. Originally established to train technicians for Uganda's growing industrial sector, we have continuously evolved to meet the changing needs of industry and society.</p>
+                    <p>In 1995, we were granted institute status and renamed the Uganda Institute of Technical Excellence. This recognition reflected our expanded role in higher technical education and research. Today, we offer a comprehensive range of programs from certificates to postgraduate diplomas across engineering, technology and vocational disciplines.</p>
+                    <p>Our 50-acre main campus in Kampala's industrial area features state-of-the-art workshops, laboratories, and learning facilities that provide students with hands-on experience using industry-standard equipment.</p>
+                </div>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <h3>Our Mission</h3>
+                    <p>To provide world-class technical education and training that equips students with practical skills, theoretical knowledge, and professional values to meet the demands of industry and contribute to Uganda's socio-economic development.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading center of excellence for technical education and innovation in East Africa, recognized for producing highly skilled professionals who drive industrial growth and technological advancement.</p>
+                </div>
+            </div>
+
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1972</div>
+                    <div class="timeline-content">
+                        <h4>Institution Founded</h4>
+                        <p>Established as Uganda Technical College with three engineering departments and an initial intake of 120 students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1985</div>
+                    <div class="timeline-content">
+                        <h4>First Expansion</h4>
+                        <p>Added new vocational programs and expanded campus facilities to accommodate growing student numbers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h4>Institute Status</h4>
+                        <p>Granted institute status and renamed Uganda Institute of Technical Excellence, reflecting expanded academic scope.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h4>Research Center</h4>
+                        <p>Established the Center for Technical Innovation to focus on applied research and industry collaboration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4>50th Anniversary</h4>
+                        <p>Celebrated 50 years of excellence in technical education with over 25,000 alumni worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Page -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programs.html">Programs</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="programs-page">
+        <div class="container">
+            <div class="program-categories">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Engineering Programs" loading="lazy" />
+                    </div>
+                    <div class="category-content">
+                        <h3>Engineering Programs</h3>
+                        <p>Our engineering programs combine rigorous theoretical training with extensive practical experience in well-equipped workshops and laboratories.</p>
+                        <a href="engineering.html" class="btn btn-primary">Explore Engineering</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Technology Programs" loading="lazy" />
+                    </div>
+                    <div class="category-content">
+                        <h3>Technology Programs</h3>
+                        <p>Stay ahead in the digital age with our cutting-edge technology programs taught by industry-experienced faculty using the latest tools and methodologies.</p>
+                        <a href="technology.html" class="btn btn-primary">Explore Technology</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1581093057305-25a8e1e0eaf3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Vocational Programs" loading="lazy" />
+                    </div>
+                    <div class="category-content">
+                        <h3>Vocational Programs</h3>
+                        <p>Gain practical, job-ready skills in high-demand trades through our hands-on vocational programs with strong industry connections.</p>
+                        <a href="vocational.html" class="btn btn-primary">Explore Vocational</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-details">
+                <h2>Program Structure</h2>
+                <p>All our programs are designed with input from industry partners to ensure graduates acquire the skills employers need. Our curriculum balances theoretical knowledge with practical application through:</p>
+                <ul>
+                    <li>Classroom lectures by experienced faculty</li>
+                    <li>Hands-on workshops in well-equipped labs</li>
+                    <li>Industry placements and internships</li>
+                    <li>Real-world projects and case studies</li>
+                    <li>Professional skills development</li>
+                </ul>
+
+                <h3 class="program-structure">Sample Program Structure</h3>
+                <table class="structure-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Semester</th>
+                            <th>Key Focus Areas</th>
+                            <th>Credits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Fundamentals, Core Theory, Basic Practicals</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>Intermediate Theory, Applied Practicals</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>Advanced Theory, Specialization Modules</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>Industry Placement, Capstone Project</td>
+                            <td>18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Page -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Campus Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery-page">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="students">Students</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Main Campus" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Main Campus</h3>
+                        <p>Our 50-acre campus in Kampala's industrial area</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Engineering Lab" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Engineering Lab</h3>
+                        <p>State-of-the-art mechanical engineering workshop</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="students">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Graduation" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Graduation Day</h3>
+                        <p>Celebrating our graduates' achievements</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hackathon" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Annual Hackathon</h3>
+                        <p>Students competing in our innovation challenge</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Computer Lab" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Computer Lab</h3>
+                        <p>Modern computing facilities for technology students</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="students">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Student Project" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Student Project</h3>
+                        <p>Engineering students working on a group project</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Career Fair" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Career Fair</h3>
+                        <p>Annual event connecting students with employers</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Library" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Institute Library</h3>
+                        <p>Extensive technical resources and study spaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Page -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Institute Blog</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-page">
+        <div class="container">
+            <div class="blog-container">
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Graduation Ceremony" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 15, 2023</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Annual Graduation Ceremony 2023</h3>
+                        <p>Join us as we celebrate the achievements of our graduating class of 2023. Over 1,200 students will receive their diplomas and certificates in a ceremony officiated by the Minister of Education.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Events</span>
+                            <a href="graduation-2023.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="New Engineering Lab" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 10, 2023</span>
+                            <span><i class="fas fa-user"></i> Prof. Mugisha</span>
+                        </div>
+                        <h3>New Engineering Lab Opened</h3>
+                        <p>Our new state-of-the-art engineering laboratory, funded by a partnership with Siemens, features the latest equipment for hands-on training in mechanical and electrical engineering disciplines.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Facilities</span>
+                            <a href="new-engineering-lab.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hackathon Winners" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> June 5, 2023</span>
+                            <span><i class="fas fa-user"></i> Dr. Nalwoga</span>
+                        </div>
+                        <h3>UITE Students Win National Hackathon</h3>
+                        <p>A team of our computer science students developed an innovative agricultural solution that won first prize at the National Tech Innovation Challenge, beating competitors from 15 institutions.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Achievements</span>
+                            <a href="hackathon-winners.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Industry Partnership" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> May 28, 2023</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3>New Partnership with MTN Uganda</h3>
+                        <p>We're proud to announce a new partnership with MTN Uganda that will provide internship opportunities for our technology students and funding for ICT infrastructure development.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Partnerships</span>
+                            <a href="mtn-partnership.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Research Grant" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> May 20, 2023</span>
+                            <span><i class="fas fa-user"></i> Research Office</span>
+                        </div>
+                        <h3>$500,000 Research Grant Awarded</h3>
+                        <p>Our renewable energy research team has been awarded a major grant to develop solar-powered irrigation systems suitable for small-scale farmers across East Africa.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Research</span>
+                            <a href="research-grant.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Alumni Reunion" loading="lazy" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> May 15, 2023</span>
+                            <span><i class="fas fa-user"></i> Alumni Office</span>
+                        </div>
+                        <h3>Annual Alumni Reunion Weekend</h3>
+                        <p>Join us for our annual alumni reunion featuring campus tours, networking events, and a special gala dinner to celebrate the achievements of our graduates.</p>
+                        <div class="blog-footer">
+                            <span class="blog-category">Alumni</span>
+                            <a href="alumni-reunion.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Blog Post -->
+    <div class="page-header">
+        <div class="container">
+            <h1>New Engineering Lab Opened</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="blog.html">Blog</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="new-engineering-lab.html">New Engineering Lab</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="single-post">
+        <div class="container">
+            <div class="post-header">
+                <h1>New Engineering Lab Opened Through Siemens Partnership</h1>
+                <div class="post-meta">
+                    <span><i class="far fa-calendar-alt"></i> June 10, 2023</span>
+                    <span><i class="fas fa-user"></i> Prof. Robert Mugisha</span>
+                    <span><i class="fas fa-folder"></i> Facilities</span>
+                </div>
+            </div>
+            
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="New Engineering Lab" loading="lazy" />
+            </div>
+            
+            <div class="post-content">
+                <p>The Uganda Institute of Technical Excellence marked another milestone in its commitment to providing world-class technical education with the official opening of our new engineering laboratory on June 10, 2023. Funded through a generous partnership with Siemens, this state-of-the-art facility represents a UGX 2.5 billion investment in Uganda's technical education infrastructure.</p>
+                
+                <h2>Cutting-Edge Facilities</h2>
+                <p>The new laboratory spans 1,200 square meters and is equipped with the latest technology for training in mechanical, electrical, and industrial engineering disciplines. Key features include:</p>
+                <ul>
+                    <li>Computerized numerical control (CNC) machines for precision manufacturing training</li>
+                    <li>Industrial automation and robotics workstations</li>
+                    <li>Renewable energy systems training equipment</li>
+                    <li>Smart grid and power systems simulation tools</li>
+                    <li>3D printing and rapid prototyping facilities</li>
+                </ul>
+                
+                <blockquote>
+                    "This laboratory bridges the gap between theoretical knowledge and practical skills that industry demands. Our students will now train on equipment identical to what they'll encounter in the workplace," said Prof. Robert Mugisha, Dean of Engineering.
+                </blockquote>
+                
+                <h2>Industry-Aligned Training</h2>
+                <p>The laboratory was designed in consultation with industry partners to ensure the skills students acquire match current workplace requirements. Siemens will also provide regular equipment upgrades and instructor training as part of the five-year partnership agreement.</p>
+                
+                <p>"We're proud to partner with UITE in developing Uganda's engineering talent pipeline," said Siemens Uganda CEO during the opening ceremony. "Investing in technical education is investing in the nation's industrial development."</p>
+                
+                <h2>Benefits to Students</h2>
+                <p>The new facility will benefit over 800 engineering students annually, providing them with:</p>
+                <ul>
+                    <li>Hands-on experience with industry-standard equipment</li>
+                    <li>Opportunities to work on real-world engineering challenges</li>
+                    <li>Enhanced employability through practical skills development</li>
+                    <li>Access to cutting-edge technology for research projects</li>
+                </ul>
+                
+                <p>The laboratory will also serve as a regional training center for industry professionals through short courses and certification programs developed in partnership with Siemens.</p>
+                
+                <div class="post-tags">
+                    <a href="#" class="tag">Engineering</a>
+                    <a href="#" class="tag">Facilities</a>
+                    <a href="#" class="tag">Partnerships</a>
+                    <a href="#" class="tag">Siemens</a>
+                </div>
+                
+                <div class="post-navigation">
+                    <a href="#" class="nav-link"><i class="fas fa-chevron-left"></i> Previous: Graduation Ceremony 2023</a>
+                    <a href="#" class="nav-link">Next: Hackathon Winners <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We're here to answer any questions you may have about our programs, admissions process, or campus life. Reach out to us through any of the channels below or fill out the contact form.</p>
+                    
+                    <div class="info-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+                        <p>Plot 42, Industrial Area</p>
+                        <p>Kampala, Uganda</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="fas fa-phone-alt"></i> Contact Details</h3>
+                        <p>General Inquiries: +256 414 123456</p>
+                        <p>Admissions Office: +256 414 123457</p>
+                        <p>Email: info@uite.ac.ug</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3><i class="far fa-clock"></i> Working Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="">Select Subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="programs">Program Information</option>
+                                <option value="partnerships">Partnership Opportunities</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536223157963!2d32.58151431475387!3d0.3137223640541905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb93c0005aab%3A0x8e7fd7dc8f3e4a4!2sIndustrial%20Area%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1623941234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navList = document.querySelector('.nav-list');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navList.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a nav link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navList.classList.remove('active');
+                    
+                    // Update active link
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+
+            // Dropdown menu functionality
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            navItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        const submenu = item.querySelector('.dropdown-menu');
+                        if (submenu) {
+                            e.preventDefault();
+                            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                        }
+                    }
+                });
+            });
+
+            // Programs tabs
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter programs - this would be more complex in a real implementation
+                    const category = this.getAttribute('data-tab');
+                    // In a real site, you would filter and display the appropriate programs here
+                });
+            });
+
+            // Gallery filter
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Back to top button
+            const backToTop = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+
+            // Smooth scrolling for all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send the data to a server
+                // For demo, we'll just show an alert
+                alert(`Thank you, ${name}! Your message about ${subject} has been received. We'll contact you at ${email} soon.`);
+                
+                // Reset form
+                contactForm.reset();
+            });
+
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input').value;
+                alert(`Thank you for subscribing with ${email}! You'll receive our latest updates.`);
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the Uganda Institute of Technical Excellence - our history, mission, vision, and commitment to technical education excellence since 1972.">
+    <meta name="keywords" content="Uganda Technical Education, UITE, Engineering Institute, Vocational Training, Kampala Technical College">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <meta property="og:title" content="About Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Discover our rich history and commitment to technical education excellence since 1972.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/about">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#003366">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>About Us | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #E57200;
+            --accent-color: #5B8C5A;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --text-color: #333333;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 5rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.9) 0%, rgba(0, 51, 102, 0.7) 100%);
+            z-index: 1;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* About Page Content */
+        .about-page {
+            padding: 5rem 0;
+        }
+        
+        .about-page-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .about-page-image {
+            flex: 1 1 45%;
+            min-width: 300px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .about-page-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+        
+        .about-page-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .about-page-text {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+        
+        /* Mission & Vision */
+        .mission-vision {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .mission-card, .vision-card {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .vision-card {
+            border-top-color: var(--accent-color);
+        }
+        
+        /* Timeline */
+        .history-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 4rem auto 0;
+            padding-left: 50px;
+        }
+        
+        .history-timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 100%;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+        
+        .timeline-year {
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: 0 0 0 4px var(--white);
+        }
+        
+        .timeline-content {
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            margin-left: 30px;
+        }
+        
+        .timeline-content:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid var(--white);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .about-page-content, .mission-vision {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .history-timeline {
+                padding-left: 30px;
+            }
+            
+            .timeline-year {
+                left: -30px;
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation (same as index.html) -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>About UITE</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-page">
+        <div class="container">
+            <div class="about-page-content">
+                <div class="about-page-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UITE Campus" loading="lazy" />
+                </div>
+                <div class="about-page-text">
+                    <h2>Our History</h2>
+                    <p>Founded in 1972 as the Uganda Technical College, our institution has grown from humble beginnings to become the nation's premier technical education provider. Originally established to train technicians for Uganda's growing industrial sector, we have continuously evolved to meet the changing needs of industry and society.</p>
+                    <p>In 1995, we were granted institute status and renamed the Uganda Institute of Technical Excellence. This recognition reflected our expanded role in higher technical education and research. Today, we offer a comprehensive range of programs from certificates to postgraduate diplomas across engineering, technology and vocational disciplines.</p>
+                    <p>Our 50-acre main campus in Kampala's industrial area features state-of-the-art workshops, laboratories, and learning facilities that provide students with hands-on experience using industry-standard equipment.</p>
+                </div>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <h3>Our Mission</h3>
+                    <p>To provide world-class technical education and training that equips students with practical skills, theoretical knowledge, and professional values to meet the demands of industry and contribute to Uganda's socio-economic development.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading center of excellence for technical education and innovation in East Africa, recognized for producing highly skilled professionals who drive industrial growth and technological advancement.</p>
+                </div>
+            </div>
+
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1972</div>
+                    <div class="timeline-content">
+                        <h4>Institution Founded</h4>
+                        <p>Established as Uganda Technical College with three engineering departments and an initial intake of 120 students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1985</div>
+                    <div class="timeline-content">
+                        <h4>First Expansion</h4>
+                        <p>Added new vocational programs and expanded campus facilities to accommodate growing student numbers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h4>Institute Status Achieved</h4>
+                        <p>Granted institute status and renamed to Uganda Institute of Technical Excellence, marking our transition to higher education.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h4>International Accreditation</h4>
+                        <p>Received international accreditation for our engineering programs from the Engineering Council of East Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+</body>
+</html>

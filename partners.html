@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the strategic partnerships of Uganda Institute of Technical Excellence with industry, academic, and international organizations.">
+    <meta name="keywords" content="UITE partners, technical education collaborations, Uganda industry partnerships, academic collaborations">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    <meta property="og:title" content="Partners | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Strategic partnerships enhancing technical education through industry, academic, and international collaborations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/partners">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/partners-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#003366">
+    <link rel="canonical" href="https://www.uite.ac.ug/partners">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <title>Partners | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #E57200;
+            --accent-color: #5B8C5A;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --text-color: #333333;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        h3 i {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+            max-width: 75ch;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 5rem 0 3rem;
+            position: relative;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+            margin-right: 0.5rem;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Partners Page Content */
+        .partners-page {
+            padding: 5rem 0;
+        }
+        
+        .partners-intro {
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+        
+        /* Partners Categories */
+        .partners-categories {
+            margin: 4rem 0;
+        }
+        
+        .category {
+            margin-bottom: 3rem;
+        }
+        
+        .partner-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+            align-items: center;
+        }
+        
+        .partner-logos img {
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .partner-logos img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Partnership Info */
+        .partnership-info {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .partnership-info h3 {
+            color: var(--white);
+        }
+        
+        .partnership-info p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            margin-top: 1.5rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--white);
+            color: var(--secondary-color);
+        }
+        
+        /* Testimonials */
+        .partner-testimonials {
+            margin: 4rem 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .testimonial {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 4rem;
+            font-family: 'Playfair Display', serif;
+            color: rgba(0, 51, 102, 0.1);
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+        
+        .author-info p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .partner-logos {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .partnership-info {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Partners</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="about.html">About</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="partners.html">Partners</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="partners-page">
+        <div class="container">
+            <div class="partners-intro">
+                <h2>Strategic Partnerships</h2>
+                <p>We collaborate with leading organizations to enhance our programs, provide student opportunities, and drive innovation in technical education. Our partnerships span industry leaders, academic institutions, and international organizations committed to advancing technical skills development in Uganda and beyond.</p>
+            </div>
+            
+            <div class="partners-categories">
+                <div class="category">
+                    <h3><i class="fas fa-industry"></i> Industry Partners</h3>
+                    <p>Collaborations with leading corporations that provide internships, equipment donations, and curriculum input to ensure our programs meet industry needs.</p>
+                    <div class="partner-logos">
+                        <img src="https://via.placeholder.com/200x80?text=Siemens" alt="Siemens" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=MTN" alt="MTN Uganda" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=Kiira+Motors" alt="Kiira Motors" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=Uganda+Electricity" alt="Uganda Electricity Generation Company" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-university"></i> Academic Partners</h3>
+                    <p>Collaborations with universities and research institutions that facilitate student exchanges, joint research, and academic resource sharing.</p>
+                    <div class="partner-logos">
+                        <img src="https://via.placeholder.com/200x80?text=Makerere" alt="Makerere University" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=Kyambogo" alt="Kyambogo University" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=UMIT" alt="Uganda Management Institute of Technology" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <h3><i class="fas fa-globe-africa"></i> International Partners</h3>
+                    <p>Global partnerships that bring international best practices, funding opportunities, and cross-cultural learning experiences.</p>
+                    <div class="partner-logos">
+                        <img src="https://via.placeholder.com/200x80?text=GIZ" alt="GIZ" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=British+Council" alt="British Council" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=DAAD" alt="DAAD" loading="lazy">
+                        <img src="https://via.placeholder.com/200x80?text=AFD" alt="Agence Française de Développement" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="partner-testimonials">
+                <h2>What Our Partners Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>Our partnership with UITE has been instrumental in developing skilled technicians for our manufacturing operations. The institute's hands-on approach produces graduates who are work-ready from day one.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Mugisha" loading="lazy">
+                            <div class="author-info">
+                                <h4>John Mugisha</h4>
+                                <p>CEO, Kiira Motors Corporation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>The joint research projects with UITE have yielded innovative solutions in renewable energy. Their technical expertise combined with our academic resources creates powerful synergies.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Nalwoga" loading="lazy">
+                            <div class="author-info">
+                                <h4>Dr. Sarah Nalwoga</h4>
+                                <p>Dean, Faculty of Engineering, Makerere University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="partnership-info">
+                <h3>Become a Partner</h3>
+                <p>We welcome new partnerships with organizations that share our vision for technical education excellence. Together we can develop the next generation of skilled professionals to drive Uganda's industrial growth.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Our Partnerships Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>

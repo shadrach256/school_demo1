@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Uganda Institute of Technical Excellence offers cutting-edge technology programs to prepare students for careers in the digital economy.">
+    <meta name="keywords" content="technology programs, computer science, Uganda, technical education, diploma programs">
+    <meta name="author" content="Uganda Institute of Technical Excellence">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Technology Programs | Uganda Institute of Technical Excellence">
+    <meta property="og:description" content="Cutting-edge technology education programs in Uganda">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uite.ac.ug/technology">
+    <meta property="og:image" content="https://www.uite.ac.ug/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Technology Programs | Uganda Institute of Technical Excellence">
+    <meta name="twitter:description" content="Cutting-edge technology education programs in Uganda">
+    <meta name="twitter:image" content="https://www.uite.ac.ug/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Technology Programs | Uganda Institute of Technical Excellence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-color: #003366; /* Dark blue - professional */
+            --secondary-color: #E03C31; /* Harvard crimson-like accent */
+            --accent-color: #4B8B9D; /* Complementary teal */
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #495057;
+            --text-color: #212529;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            font-size: 1rem;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Source Serif 4', serif;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Header */
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+        
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        .breadcrumb i {
+            margin: 0 0.5rem;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+        
+        /* Main Content */
+        .technology-page {
+            padding: 4rem 0;
+        }
+        
+        .programs-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .programs-intro h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .programs-intro h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .programs-intro p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Programs Grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .program-card {
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .program-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .program-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .program-card:hover .program-image img {
+            transform: scale(1.05);
+        }
+        
+        .program-content {
+            padding: 1.5rem;
+        }
+        
+        .duration {
+            display: inline-block;
+            font-size: 0.85rem;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Technology Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="programs.html">Programs</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="technology.html">Technology</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="technology-page">
+        <div class="container">
+            <div class="programs-intro">
+                <h2>Cutting-Edge Technology Education</h2>
+                <p>Our technology programs prepare students for careers in the digital economy through hands-on training with the latest tools and methodologies. Accredited by the Uganda National Council for Higher Education, our programs combine theoretical knowledge with practical application.</p>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="computer-science.jpg" alt="Students working in computer lab">
+                    </div>
+                    <div class="program-content">
+                        <h3>Diploma in Computer Science</h3>
+                        <span class="duration">2 Years</span>
+                        <p>Comprehensive training in programming, databases, networking, and software development. Graduates are prepared for careers as software developers, systems analysts, and IT specialists.</p>
+                        <a href="computer-science-details.html" class="btn btn-secondary">Program Details</a>
+                    </div>
+                </div>
+                
+                <!-- More program cards would follow the same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would be here -->
+    
+    <!-- Scripts -->
+    <script>
+        // Document loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any JavaScript functionality would go here
+            console.log('Document loaded');
+        });
+    </script>
+</body>
+</html>
